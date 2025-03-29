@@ -40,9 +40,9 @@ function PostDetails({ postId }: PostDetailsProps) {
 
             {/* Header: Avatar and Title */}
             <div className="flex items-center space-x-2">
-                {data.avatar_url ? (
+                {user.user_metadata?.avatar_url ? (
                     <img
-                        src={data.avatar_url}
+                        src={user.user_metadata?.avatar_url}
                         alt="User Avatar"
                         className="w-[35px] h-[35px] rounded-full object-cover"
                     />
